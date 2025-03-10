@@ -1,203 +1,96 @@
 body {
-  display: flex;
-  position: relative;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background: url("../img/background.svg") no-repeat 100% 0;
-  background-size: cover;
-  justify-items: center;
-  align-items: center;
-}
-
-h1 {
-  width: 490px;
-  font-family: "Caveat", serif;
-  font-size: 50px;
-  line-height: 20px;
-}
-
-h2 {
-  padding-bottom: 12px;
-  border-bottom: 1px solid #cccccc;
-}
-
-p {
-  z-index: 2;
-}
-
-.site-header {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.site-header img {
-  display: block;
-  margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  width: 480px;
-  margin: 0 auto;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.features {
-  margin-bottom: 30px;
+.site-header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.features p {
-  display: inline-block;
-  vertical-align: top;
-  width: 30%;
-  margin: 0 5px;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center top;
+.site-header h1 {
+    margin: 0;
 }
 
-.feature-one {
-  padding-top: 60px;
-  background-image: url(../img/heart.png);
-  background-size: 40px 40px;
-}
-
-.feature-two {
-  padding-top: 60px;
-  background-image: url(../img/teddy-bear.png);
-  background-size: 40px 40px;
-}
-
-.feature-three {
-  padding-top: 60px;
-  background-image: url(../img/valentines-day.png);
+.features, .skills, .Advice {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
-  padding: 0;
-  list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
 .skills-item {
-  margin-bottom: 15px;
-  padding-left: 20px;
-  border-left: 10px solid #c4c4c4;
-  color: #999999;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-.standard {
-  border-color: #ffc5b3;
-  color: #666666;
-}
-
-/* Add a rule for the vip class here */
-
-.controls {
-  display: flex;
-  justify-content: space-between;
+.skills-item.vip {
+    font-weight: bold;
+    color: #007bff;
 }
 
 .shop {
-  display: flex;
-  justify-content: space-between;
-}
-
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  color: #999999;
+    text-align: center;
+    margin-top: 20px;
 }
 
 button {
-  background-color: #e5c482;
-  border-radius: 5px;
-  font-weight: 700;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #cca557;
+    background: #218838;
 }
 
-.muteButton {
-  position: absolute;
-  top: 100px;
-  right: 130px;
-  background-color: transparent;
-  border: black 2px solid;
-  color: #000000;
-  font-size: 20px;
-  cursor: pointer;
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #007bff;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.healthCalculatorEnterButton {
-  position: absolute;
-  top: 700px;
-  left: 10%;
-  background-color: #e5c482;
-  border-radius: 5px;
-  font-weight: 700;
-  width: 200px;
-  height: 25px;
+.purchaseWindow {
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background: #fff;
 }
 
-.healthCalculatorModal {
-  position: relative;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  background-color: #f9e7c2;
-  border-radius: 25px;
-  transition: opacity 0.5s;
+.equasionP {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-.healthCalculatorExitButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: transparent;
-  border: 0;
-  color: #000000;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.healthCalcHint {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.healthCalculatorResult {
-  position: absolute;
-  top: 230px;
-  left: 30px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.calcButton {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  background-color: #e5c482;
-  border-radius: 5px;
-  font-weight: 700;
-  width: 100px;
-}
-
-input {
-  background-color: #f6d799;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.equasionInput {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
