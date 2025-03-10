@@ -22,28 +22,28 @@ const medicalTips = [
 ];
 
 let lastTipIndex = null;
-let hearts = 5;
+let pills = 5;
 
 const buttonMedicalTips = document.getElementById("btnMedicalAdvice");
 const medicalTipsElement = document.getElementById("medicalAdvice");
-const heartsElement = document.getElementById("hearts");
+const heartsElement = document.getElementById("healthPoints");
 const purchaseWindow = document.querySelector(".purchaseWindow");
 const equationP = document.querySelector(".equasionP");
 const equationInput = document.querySelector(".equasionInput");
 const equationButton = document.getElementById("equasionButton");
 
 function updateHeartsDisplay() {
-  heartsElement.innerHTML = "❤️".repeat(hearts) + "❌".repeat(5 - hearts);
+  heartsElement.innerHTML = "💊".repeat(pills) + "❌".repeat(5 - pills);
 }
 
 function showTip() {
   lastTipIndex = getRandomNumber(0, medicalTips.length, lastTipIndex);
   medicalTipsElement.innerHTML = medicalTips[lastTipIndex];
-  if (hearts > 0) {
-    hearts--;
+  if (pills > 0) {
+    pills--;
     updateHeartsDisplay();
   }
-  if (hearts === 0) {
+  if (pills === 0) {
     medicalTipsElement.innerHTML = "You are out of health points!";
     buttonMedicalTips.classList.add("visually-hidden");
   }
@@ -69,7 +69,7 @@ function evaluateEquation() {
   const userAnswer = parseInt(equationInput.value, 10);
   const correctAnswer = eval(lastEquationIndex);
   if (userAnswer === correctAnswer) {
-    hearts = 5;
+    pills = 5;
     medicalTipsElement.innerHTML = null;
     buttonMedicalTips.classList.remove("visually-hidden");
     updateHeartsDisplay();
