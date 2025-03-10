@@ -14,12 +14,19 @@
     <div class="container">
       <header class="site-header">
         <h1>Welcome to the Medical Advice Center!</h1>
-        <img src="./img/medical-symbol.png" width="250" height="250" alt="Medical symbol" />
+        <img
+          src="./img/medical-symbol.png"
+          width="250"
+          height="250"
+          alt="Medical symbol"
+        />
       </header>
 
       <section class="features">
         <h2>What is the Medical Advice Center?</h2>
-        <p class="feature-one">A place to get reliable medical advice and tips.</p>
+        <p class="feature-one">
+          A place to get reliable medical advice and tips.
+        </p>
         <p class="feature-two">Your health is our priority.</p>
         <p class="feature-three">Stay informed and healthy!</p>
       </section>
@@ -27,11 +34,21 @@
       <section class="skills">
         <h2>Ways to Maintain Your Health:</h2>
         <ul class="skills-list">
-          <li class="skills-item">💊 Regular Check-ups – Stay on top of your health.</li>
-          <li class="skills-item standard">🥗 Healthy Eating – Nourish your body.</li>
-          <li class="skills-item standard">🏃‍♂️ Exercise – Keep active for a better life.</li>
-          <li class="skills-item vip">🧘‍♀️ Mental Wellness – Take care of your mind.</li>
-          <li class="skills-item vip">💧 Stay Hydrated – Drink plenty of water.</li>
+          <li class="skills-item">
+            💊 Regular Check-ups – Stay on top of your health.
+          </li>
+          <li class="skills-item standard">
+            🥗 Healthy Eating – Nourish your body.
+          </li>
+          <li class="skills-item standard">
+            🏃‍♂️ Exercise – Keep active for a better life.
+          </li>
+          <li class="skills-item vip">
+            🧘‍♀️ Mental Wellness – Take care of your mind.
+          </li>
+          <li class="skills-item vip">
+            💧 Stay Hydrated – Drink plenty of water.
+          </li>
         </ul>
       </section>
 
@@ -45,6 +62,11 @@
         </div>
       </section>
 
+      <section class="BMI_Calc Advice">
+        <h2>Calculate Your BMI</h2>
+        <button id="btnBMI">Click Here!</button>
+      </section>
+
       <footer class="site-footer">
         <p>© 🏥, 2025</p>
         <p>Your health is important to us!</p>
@@ -54,10 +76,22 @@
       <p>Solve an equation to get your health points!</p>
       <p class="equationP"></p>
       <input type="text" class="equationInput" />
-      <p class="equationHint">Enter the correct answer to receive more health points.</p>
+      <p class="equationHint">
+        Enter the correct answer to receive more health points.
+      </p>
       <button id="equationButton">Submit</button>
     </dialog>
 
+    <dialog class="BMICalcWindow">
+      <button id="closeButton">✖</button>
+      <p>Enter your weight and height to calculate your BMI.</p>
+      <input type="number" class="weightInput" placeholder="Weight in kg" />
+      <input type="number" class="heightInput" placeholder="Height in cm" />
+      <button id="calculateBMI">Calculate</button>
+      <p class="bmiResult"></p>
+    </dialog>
+
     <script src="./js/Advice.js"></script>
+    <script src="./js/BMI.js"></script>
   </body>
 </html>
