@@ -28,9 +28,9 @@ const buttonMedicalTips = document.getElementById("btnMedicalAdvice");
 const medicalTipsElement = document.getElementById("medicalAdvice");
 const heartsElement = document.getElementById("healthPoints");
 const purchaseWindow = document.querySelector(".purchaseWindow");
-const equationP = document.querySelector(".equasionP");
+const equationP = document.querySelector(".equationP");
 const equationInput = document.querySelector(".equationInput");
-const equationButton = document.getElementById("equasionButton");
+const equationButton = document.getElementById("equationButton");
 
 function updateHeartsDisplay() {
   heartsElement.innerHTML = "💊".repeat(pills) + "❌".repeat(5 - pills);
