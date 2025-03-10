@@ -29,7 +29,7 @@ const medicalTipsElement = document.getElementById("medicalAdvice");
 const heartsElement = document.getElementById("healthPoints");
 const purchaseWindow = document.querySelector(".purchaseWindow");
 const equationP = document.querySelector(".equasionP");
-const equationInput = document.querySelector(".equasionInput");
+const equationInput = document.querySelector(".equationInput");
 const equationButton = document.getElementById("equasionButton");
 
 function updateHeartsDisplay() {
