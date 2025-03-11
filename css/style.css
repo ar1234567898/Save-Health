@@ -1,107 +1,130 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .site-header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .site-header h1 {
-    margin: 0;
+  margin: 0;
 }
 
-.features, .skills, .Advice {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.features,
+.skills,
+.Advice {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .skills-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 .skills-item.vip {
-    font-weight: bold;
-    color: #007bff;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Gallery */
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-image {
+  width: 600px;
+  height: 300px;
+}
+
+#left-arrow, #right-arrow {
+    width: 64px;
+    height: 64px;
+    gap: 100px;
+    cursor: pointer;
 }
 
 .shop {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 button {
-    background: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 button:hover {
-    background: #218838;
+  background: #218838;
 }
 
 .site-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #007bff;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background: #007bff;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .purchaseWindow {
-    padding: 20px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    background: #fff;
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background: #fff;
 }
 
 .equasionP {
-    font-size: 1.2em;
-    margin: 10px 0;
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 
 .equasionInput {
-    padding: 10px;
-    width: 100%;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .Advice {
-    height: 250px;
-    justify-items: center;
+  height: 250px;
+  justify-items: center;
 }
 
 #closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
