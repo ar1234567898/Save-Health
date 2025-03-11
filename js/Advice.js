@@ -79,6 +79,8 @@ function evaluateEquation() {
   }
 }
 
+
+
 buttonMedicalTips.addEventListener("click", showTip);
 document
   .getElementById("buyHealthPoints")
