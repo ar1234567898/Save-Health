@@ -13,7 +13,7 @@ document.getElementById("right-arrow").addEventListener("click", () => {
   }
   document
     .getElementById("main-image")
-    .setAttribute("src", `img/${arrayOfImages[galleryImage - 1]}.jpeg`);
+    .setAttribute("src", `img/gallery/${arrayOfImages[galleryImage - 1]}.jpeg`);
     console.log(galleryImage);
 });
 
