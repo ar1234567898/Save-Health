@@ -33,6 +33,10 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.sliding-text {
+  color:red;
+}
+
 .skills-list {
   list-style-type: none;
   padding: 0;
@@ -80,7 +84,7 @@ body {
 
 #left-arrow:hover,
 #right-arrow:hover {
-  border-radius: 50% ;
+  border-radius: 50%;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.3s;
 }
@@ -95,7 +99,6 @@ body {
 #left-arrow-container:hover,
 #right-arrow-container:hover {
   box-shadow: 0 0 40px 15px rgba(0, 0, 0, 0.4);
-  
 }
 
 .shop {
