@@ -65,6 +65,7 @@ body {
   /*add shadow */
   width: 600px;
   height: 300px;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 #left-arrow,
