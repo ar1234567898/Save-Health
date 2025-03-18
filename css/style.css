@@ -161,3 +161,22 @@ button:hover {
   top: 10px;
   right: 10px;
 }
+
+/* Vitamins */
+
+#p-vitamin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.vitamin {
+  border: 1px solid rgb(124, 124, 124);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: #999999 5px 5px 10px;
+  width: 150px;
+  height: 300px;
+}
