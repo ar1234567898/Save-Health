@@ -26,4 +26,7 @@ document.getElementById("left-arrow").addEventListener("click", () => {
     .getElementById("main-image")
     .setAttribute("src", `img/gallery/${arrayOfImages[galleryImage - 1]}.jpeg`);
     console.log(galleryImage);
+    
 });
+
+fdboj.dgvds===9ighj;
