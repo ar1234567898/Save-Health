@@ -20,19 +20,35 @@ fetch('js/vitamins.json')
 
       // Populate the vitamin div with content
       vitaminDiv.innerHTML = `
-        <p>${vitamin.id}</p>
-        <h3>${vitamin.title}</h3>
-        <img src='img/vitamins/${arrayOfPhotos[index]}.png' alt="${vitamin.title}">
-        <p>${vitamin.description}</p>
-        <div> 
-          <p>${"💖".repeat(vitamin.rating) + "🤍".repeat(5 - vitamin.rating)}</p>
-          <p>${vitamin.type}</p> 
+        
+        <div class = "vitamin-container">
+          <div class="front">
+          <p>${vitamin.id}</p>
+          <h3>${vitamin.title}</h3>
+          <img src='img/vitamins/${arrayOfPhotos[index]}.png' alt="${vitamin.title}" onerror="this.onerror=null;this.src='img/vitamins/default.png';" />
+          <p>${vitamin.description}</p>
+          <div> 
+            <p>${"💖".repeat(vitamin.rating) + "🤍".repeat(5 - vitamin.rating)}</p>
+            <p class = "vitamin-type">${vitamin.type}</p>
+          </div>           
+          </div>
+          <div class="back">
+            <h3>More Info</h3>
+            <p>Vitamin A is essential for healthy vision, skin, and immune function.</p>
+          </div>
         </div>
       `;
     });
   })
   .catch((error) => {
     console.error("Error fetching vitamins data:", error);
+  });
+
+  document.querySelectorAll('.vitamin').forEach((vitamin) => {
+    vitamin.addEventListener('click', () => {
+      vitamin.classList.toggle('flipped');
+      console.log("l");
+    });
   });
 
 
