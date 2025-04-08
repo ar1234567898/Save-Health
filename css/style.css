@@ -177,11 +177,45 @@ button:hover {
   align-items: center;
   border: 1px solid rgb(124, 124, 124);
   margin: 10px;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 5px;
   box-shadow: #999999 5px 5px 10px;
-  width: 180px;
-  min-height: 340px;
+  width: auto;
+  min-height: auto;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* Ensures 3D transformation */
+  position: relative;
+}
+
+.vitamin:hover{
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  box-shadow: #999999 10px 10px 20px;
+}
+
+.vitamin-type {
+  max-width: 75px;
+}
+
+/* Add a container for the flip effect */
+.vitamin-container {
+   perspective: 1000px; /* Adds a 3D perspective */
+}
+
+.vitamin.flipped {
+  transform: rotateY(180deg); /* Flips the card */
+}
+
+.vitamin .front,
+.vitamin .back {
+  /* position: absolute; */
+  width: auto;
+  min-height: auto;
+  backface-visibility: hidden; /* Hides the back when facing front */
+}
+
+.vitamin .back {
+  transform: rotateY(180deg); /* Positions the back side */
 }
 
 .vitamin h3 {
