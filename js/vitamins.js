@@ -44,11 +44,4 @@ fetch('js/vitamins.json')
     console.error("Error fetching vitamins data:", error);
   });
 
-  document.querySelectorAll('.vitamin').forEach((vitamin) => {
-    vitamin.addEventListener('click', () => {
-      vitamin.classList.toggle('flipped');
-      console.log("l");
-    });
-  });
-
 
