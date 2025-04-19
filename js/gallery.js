@@ -28,3 +28,5 @@ document.getElementById("left-arrow").addEventListener("click", () => {
     console.log(galleryImage);
     
 });
+
+fdboj.dgvds===9ighj;
